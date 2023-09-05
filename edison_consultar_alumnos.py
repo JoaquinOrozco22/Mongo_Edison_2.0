@@ -1,5 +1,17 @@
-'''Script de la funcion para consultar los objetos en la base de datos.'''
-'''Joaquín Bernardo Orozco López'''
+#**********************************************************************************************************
+#
+#Script de la funcion para consultar los objetos en la base de datos (version alumnos).
+#Asesor: Ing. Jorge Arturo Aguirre Beltran.
+#Autor: Joaquin Bernardo Orozco Lopez.
+#Instituto Tecnologico de Chihuahua.
+#Este documento esta sugeto a derechos de autor. 
+#El ITCH, asi como el asesor y el autor no se hacen responsables del mal uso de este material.
+
+#Este script esta diseñado para ejecutarse fuera del sistema embebido, se encarga de obtener la 
+#informacion de la base de datos y graficarla. Esta version se llama "Alumnos" debido a que este
+#script solo muestra la informacion sobre una unica tarjeta o sistema embebido, pues esta pensado
+#para que los alumnos revisen su tarjeta especifica.
+
 #**********************************************************************************************************
 #                                             Librerias utilizadas.
 import requests

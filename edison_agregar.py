@@ -1,5 +1,15 @@
-'''Script para agregar objetos y sus datos a la base de datos.'''
-'''Joaquín Bernardo Orozco López'''
+#**********************************************************************************************************
+#
+#Script para agregar objetos y sus datos a la base de datos.
+#Asesor: Ing. Jorge Arturo Aguirre Beltran.
+#Autor: Joaquin Bernardo Orozco Lopez.
+#Instituto Tecnologico de Chihuahua.
+#Este documento esta sugeto a derechos de autor. 
+#El ITCH, asi como el asesor y el autor no se hacen responsables del mal uso de este material.
+
+#Este script esta diseñado para ejecutarse dentro del sistema embebido, generara los objetos con su 
+#respectiva informacion, agregando un total de 10 lecturas a la base de datos.
+
 #**********************************************************************************************************
 #                                             Librerias utilizadas.
 

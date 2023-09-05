@@ -1,11 +1,15 @@
 #**********************************************************************************************************
 #
-#
-#Script de la funcion para consultar los objetos en la base de datos.
-#Joaquín Bernardo Orozco López
-#
-#
+#Script de la funcion para consultar los objetos en la base de datos (version profesor).
+#Asesor: Ing. Jorge Arturo Aguirre Beltran.
+#Autor: Joaquin Bernardo Orozco Lopez.
+#Instituto Tecnologico de Chihuahua.
+#Este documento esta sugeto a derechos de autor. 
+#El ITCH, asi como el asesor y el autor no se hacen responsables del mal uso de este material.
 
+#Este script esta diseñado para ejecutarse fuera del sistema embebido, se encarga de obtener la 
+#informacion de la base de datos y graficarla. Esta version se llama "Profesor" debido a que este
+#script muestra puede mostrar la informacion de todos los sistemas embebidos asociados al servidor.
 
 #**********************************************************************************************************
 #                                             Librerias utilizadas.

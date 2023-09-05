@@ -1,5 +1,15 @@
-'''Script con la funcion para eliminar los objetos de la base de datos.'''
-'''Joaquín Bernardo Orozco López'''
+#**********************************************************************************************************
+#
+#Script con la funcion para eliminar los objetos de la base de datos.
+#Asesor: Ing. Jorge Arturo Aguirre Beltran.
+#Autor: Joaquin Bernardo Orozco Lopez.
+#Instituto Tecnologico de Chihuahua.
+#Este documento esta sugeto a derechos de autor. 
+#El ITCH, así como el asesor y el autor no se hacen responsables del mal uso de este material.
+
+#Este script esta diseñado para eliminar la informacion de la base de datos, asi como el 
+#objeto seleccionado. 
+
 #**********************************************************************************************************
 #                                             Librerias utilizadas.
 import requests
@@ -29,23 +39,27 @@ tarjeta = {
     4: "13",
 }
 
-#encabezados de la llamada, manda y recibe json
+#**********************************************************************************************************
+#                                             Funciones en formato JSON.
+
+#Encabezados de la llamada, manda y recibe json
 headers ={'Content-Type': 'application/json', 'Accept': 'application/json'}
 
-#api
+#Funcion que accede y elimina la informacion del objeto con el tipo y ID correspondiente.
 def borra_datos(id):
     r = requests.delete("http://%s:%d/v1/contextEntities/%s" % (host,puerto,id), headers = headers)
     return r.text
 
-#test
+#Funcion que genera el ID para identificar el elemento en la base de datos, hace el llamado a la funcion API.
 def test_borra_datos(i, numT):
-    #id = "muestra1"
-    #id=("lectura"+str(i))
     id=("e"+numT+"_lectura"+str(i))
     borra_datos(id)
 
+#**********************************************************************************************************
+#                                                   Main.
+
 if __name__  == "__main__":
-    #test_borra_datos()
+    #Se despliega un menu para mostrar las opciones disponibles.
     print("")
     print("")
     print("Qué lecturas quiere borrar?")
@@ -57,6 +71,7 @@ if __name__  == "__main__":
     print("")
     print("")
     print("Borrando...")
+
     # Ejecutar la función correspondiente a la opción seleccionada
     if numT in tarjeta:
         numT = tarjeta[numT]
@@ -69,8 +84,6 @@ if __name__  == "__main__":
         i=i+1
         test_borra_datos(i,numT)
         print(i)
-        #time.sleep(1)
-
         if(i==10):
             print("Borrado finalizado")
             sys.exit("Finalizando programa")
