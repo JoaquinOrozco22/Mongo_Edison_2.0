@@ -173,7 +173,10 @@ def test_grafica(y,x, etiqueta,ylimM):
 
 if __name__  == "__main__":
     #numT=("ingresa entre estas comillas el numero de tu tarjeta edison.")
-    numT=("13")
+    #numT=("8")
+    #numT=("10")
+    numT=("11")
+    #numT=("13")
     while (True):
         test_consulta_edison(numT)
 

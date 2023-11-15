@@ -7,7 +7,7 @@
 #Este documento esta sugeto a derechos de autor. 
 #El ITCH, asi como el asesor y el autor no se hacen responsables del mal uso de este material.
 
-#Este script esta diseñado para ejecutarse dentro del sistema embebido, generara los objetos con su 
+#Este script esta disenado para ejecutarse dentro del sistema embebido, generara los objetos con su 
 #respectiva informacion, agregando un total de 10 lecturas a la base de datos.
 
 #**********************************************************************************************************
@@ -80,7 +80,7 @@ def inserta_datos(datos_json):
 
 #Funcion que genera el objeto del tipo edison, con el ID indicado y con los atributos asignados.
 def test_agrega_edison(a,b,c,d, hora_actual_str):
-    atributos_e13 = [
+    atributos_e10 = [
         {
             "name":"Humedad",
             "type":"integer",
@@ -109,8 +109,8 @@ def test_agrega_edison(a,b,c,d, hora_actual_str):
         },
     ]
 
-    edison13=datos_agregar_json("e13_lectura"+str(i),"edison13", atributos_e13)
-    inserta_datos (edison13)
+    edison10=datos_agregar_json("e10_lectura"+str(i),"edison10", atributos_e10)
+    inserta_datos (edison10)
 
 
 #**********************************************************************************************************
